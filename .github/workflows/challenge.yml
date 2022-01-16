@@ -1,9 +1,8 @@
 name: Challenge workflow
-
 on:
     pull_request:
-    branches:    
-      - main
+        branches:    
+            - main
 
 jobs:
     job1:
@@ -12,7 +11,6 @@ jobs:
         steps:
         - name: Get date on ubuntu
           run: 'date "+%H:%M:%S   %d/%m/%y"'
-   
     job2:
         name: Date-on-windows
         runs-on: windows-latest
@@ -26,3 +24,4 @@ jobs:
         runs-on: macos-latest
         steps:
         - name: Get date on MAC OS
+          run: 'date "+%H:%M:%S   %d/%m/%y"'

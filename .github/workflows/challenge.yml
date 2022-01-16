@@ -26,3 +26,4 @@ jobs:
         runs-on: macos-latest
         steps:
         - name: Get date on MAC OS
+          run: Get-Date
